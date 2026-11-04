@@ -1,0 +1,28 @@
+cat > .gitignore << 'EOF'
+# Виртуальное окружение
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Файлы логов и кэша
+*.log
+currency_cache.json
+
+# Системные файлы macOS
+.DS_Store
+
+# Переменные окружения (если будут ключи API)
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+EOF
